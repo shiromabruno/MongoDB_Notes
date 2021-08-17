@@ -1,0 +1,21 @@
+sudo systemctl start mongod.service
+
+sudo systemctl stop mongod.service
+
+sudo systemctl enable mongod.service
+
+sudo systemctl status mongod
+
+-=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=--=-=-=-
+
+mongo --> inicia mongoDB shell
+
+db.help()
+db.stats()
+db.version()
+
+use nome_database --> cria um novo ou switch para esse DB
+db --> mostra DB atual
+show dbs --> mostra todos dbs (precisa ter ao menos 1 doc para aparecer o criado novo)
+db.document1.insert({"nome": "bruno", "age":25, "brazilian":true}) --> insere novo doc
+db.dropDatabase() --> drop database
